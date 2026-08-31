@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "id": "context7",
+      "url": "https://mcp.context7.com/mcp",
+      "auth": { "header": "Authorization", "prefix": "Bearer " },
+      "credentialEnvVar": "CONTEXT7_API_KEY",
+      "credentialRef": "op://<REF_HERE>"
+    },
+    {
+      "id": "exa",
+      "url": "https://mcp.exa.ai/mcp",
+      "auth": { "header": "x-api-key", "prefix": "" },
+      "credentialEnvVar": "EXA_API_KEY",
+      "credentialRef": "op://<REF_HERE>"
+    }
+  ]
+}
