@@ -72,7 +72,9 @@ _nono_harness() {
 # re-sourcing .zshrc after removing them from the file). zsh expands
 # aliases while PARSING function definitions, so clear them first and
 # use the `function` keyword form, which is immune to alias expansion.
-unalias claude codex claude-raw codex-raw 2>/dev/null
+unalias claude codex humanlayer claude-raw codex-raw humanlayer-raw 2>/dev/null
+
+typeset -g NONO_WRAPPERS_DIR=${${(%):-%N}:A:h}
 
 # Sandboxed by default. Each relaunch is a fresh nono supervisor →
 # expect one 1Password authorization per (re)start.
